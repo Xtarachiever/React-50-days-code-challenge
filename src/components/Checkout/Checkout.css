@@ -1,0 +1,26 @@
+.checkout_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: auto 10px; */
+}
+.advert{
+    display: flex;
+    flex: 2;
+    height: 100px;
+    width: 100%;
+    margin-right: 10px;
+}
+.advert img{
+    width: 100%;
+    object-fit: cover;
+}
+.price{
+    background-color: rgb(228, 227, 227);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    flex: 1;
+}

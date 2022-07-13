@@ -1,0 +1,16 @@
+.card{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+.card .product_info{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+}
