@@ -4,7 +4,7 @@ import './navbar.css';
 import { useStateValue } from '../StateProvider';
 
 function Navbar() {
-    const [{cart},dispatch] = useStateValue();
+    const [{cart}] = useStateValue();
   return (
     <div className="header">
         <Link to="/" className="nav_item">
