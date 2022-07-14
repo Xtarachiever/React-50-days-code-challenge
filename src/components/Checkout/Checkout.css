@@ -1,26 +1,51 @@
 .checkout_container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: auto 30px;
     width: 100%;
     /* margin: auto 10px; */
+}
+.checkout_header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .advert{
     display: flex;
     flex: 2;
     height: 100px;
     width: 100%;
-    margin-right: 10px;
 }
 .advert img{
     width: 100%;
     object-fit: cover;
 }
 .price{
-    background-color: rgb(228, 227, 227);
+    background-color: rgb(243, 236, 236);
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 150px;
     flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.price button{
+    background-color: #ff9f00;
+    padding: 5px;
+}
+.item_image{
+    width: 100px;
+}
+.cart_items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cart_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
 }
