@@ -20,7 +20,7 @@ function Home() {
           price="$30" rating={5}/>
          <Products id='2' title="Bone straight hair (Different colors available)"
           price="$10" rating={3}/>
-          <Products id='2' title="Couple Necklace (5 paires)" price="$18" rating={2}/>
+          <Products id='3' title="Couple Necklace (5 paires)" price="$18" rating={2}/>
         </div>
     </div>
   )
