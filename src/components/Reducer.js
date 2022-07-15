@@ -22,6 +22,20 @@ const reducer = (state,action)=>{
                 ...state,
                 cart:[...state.cart, action.item]
             }
+        case 'REMOVE_FROM_CART':
+            const index = state.cart.findIndex(
+                (cartItem) => cartItem.id === action.id
+            );
+            let newCart = [...state.cart]
+            if(index >= 0){
+                newCart.slice(index,1)
+            }else{
+                console.warn(`Can't remove item with id ${action.id}`)
+            }
+            return{
+                ...state,
+                cart:newCart
+            }
         default:
             return state;
     }

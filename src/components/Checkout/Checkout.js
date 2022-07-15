@@ -26,7 +26,7 @@ function Checkout() {
             <div>
                 {
                     cart.map((item)=>(
-                        <Items key={item.id} title={item.title} price={item.price} rating={item.rating}/>
+                        <Items key={item.id} id={item.id} title={item.title} price={item.price} rating={item.rating}/>
                     ))
                 }
             </div>

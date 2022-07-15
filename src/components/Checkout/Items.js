@@ -1,7 +1,15 @@
 import React from 'react';
 import Dress from '../../images/Dress.jpeg'
+import { useStateValue } from '../StateProvider';
 
-function Items({title,rating,price}) {
+function Items({title,rating,price,id}) {
+  const [{cart},dispatch] = useStateValue();
+  const removeFromCart = () =>{
+    dispatch({
+      type: "REMOVE_FROM_CART",
+      id: id
+    })
+  }
   return (
     <div className='cart_items'>
         <div className="item_image">
@@ -15,7 +23,7 @@ function Items({title,rating,price}) {
                   <span key={i}>⭐</span>
                 ))
               }</span>
-            <button>Remove from cart</button>
+            <button onClick={removeFromCart}>Remove from cart</button>
         </div>
     </div>
   )

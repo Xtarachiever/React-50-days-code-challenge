@@ -16,11 +16,11 @@ function Home() {
           Maker/ Toaster)" price="$10" rating={3}/>
         </div>
         <div className="product_division">
-         <Products id='1' title="BTS Sneakers (with post cards of the 7 members)"
+         <Products id='3' title="BTS Sneakers (with post cards of the 7 members)"
           price="$30" rating={5}/>
-         <Products id='2' title="Bone straight hair (Different colors available)"
+         <Products id='4' title="Bone straight hair (Different colors available)"
           price="$10" rating={3}/>
-          <Products id='3' title="Couple Necklace (5 paires)" price="$18" rating={2}/>
+          <Products id='5' title="Couple Necklace (5 paires)" price="$18" rating={2}/>
         </div>
     </div>
   )
