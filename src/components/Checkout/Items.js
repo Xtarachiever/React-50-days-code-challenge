@@ -9,6 +9,18 @@ function Items({title,rating,price,id}) {
       type: "REMOVE_FROM_CART",
       id: id
     })
+    return(
+      cart.reduce((item,amount)=>{
+          if(isNaN(amount[0])){
+              return(
+                  item-(-amount.price.toString().slice(1))
+              )
+          }
+      return (
+          item - amount
+      )
+  }, 0)
+  )
   }
   return (
     <div className='cart_items'>
@@ -23,7 +35,7 @@ function Items({title,rating,price,id}) {
                   <span key={i}>⭐</span>
                 ))
               }</span>
-            <button onClick={removeFromCart}>Remove from cart</button>
+            <button onClick={removeFromCart} className="checkout_cart_btn">Remove from cart</button>
         </div>
     </div>
   )

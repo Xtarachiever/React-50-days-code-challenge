@@ -11,7 +11,7 @@ function Home() {
         </div>
         <div className="product_division">
          <Products id='1' title="Home Essentials Bundle (Non-Stick 2 Slice Sandwuch
-          Maker/ Toaster)" price="$30" rating={5}/>
+          Maker/ Toaster)" price="$30.5" rating={5}/>
          <Products id='2' title="Bundle (Non-Stick 2 Slice Pizza
           Maker/ Toaster)" price="$10" rating={3}/>
         </div>
@@ -20,7 +20,7 @@ function Home() {
           price="$30" rating={5}/>
          <Products id='4' title="Bone straight hair (Different colors available)"
           price="$10" rating={3}/>
-          <Products id='5' title="Couple Necklace (5 paires)" price="$18" rating={2}/>
+          <Products id='5' title="Couple Necklace (5 paires)" price="$18.7" rating={2}/>
         </div>
     </div>
   )
