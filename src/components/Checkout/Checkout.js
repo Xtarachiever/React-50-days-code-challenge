@@ -14,7 +14,7 @@ function Checkout() {
                   <img src={Advert} alt="Advert"/>
                 </div>
                 <div className="price">
-                    <p>Subtotal (2 items) <b>{`$${getCartTotal(cart)}`}</b></p>
+                    <p>Subtotal (2 items)</p>
                     <div className='flex items-center'>
                         <input type="checkbox"/>
                         <span className='pl-2'>This order contains a gift</span>
