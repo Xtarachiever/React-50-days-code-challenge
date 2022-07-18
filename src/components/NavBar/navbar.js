@@ -24,7 +24,7 @@ function Navbar() {
         <div className="nav_right_content">
             <div className="nav_item">
                 <span>Hello Guest</span>
-                <span>Sign in</span>
+                <Link to="/"><span>Sign in</span></Link>
             </div>
             <div className="nav_item">
                 <span>Your</span>

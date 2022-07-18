@@ -8,11 +8,22 @@ import Login from './components/Login/Login';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
       <Routes>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/checkout' element={<Checkout/>}/>
-        <Route path='/' element={<Login/>}/>
+        <Route path='/' element={
+          <Login/>
+        }/>
+        <Route path='/home' element={
+          <>
+          <Navbar/>
+          <Home/>
+          </>
+        }/>
+        <Route path='/checkout' element={
+          <>
+          <Navbar/>
+          <Checkout/>
+          </>
+        }/>
       </Routes>
     </div>
   );
